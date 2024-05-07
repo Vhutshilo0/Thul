@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Electricity Issues - Thulamela Local Municipality</title>
+  <link href="https://fonts.googleapis.com/css?family=jsMath-cmbx10&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fenix&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link href="./css/electricity-issues.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <!-- Header content here -->
+      <h1>Thulamela Local Municipality</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="contact-us.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="intro">
+      <!-- Intro content here -->
+      <h2>Report Electricity Issues</h2>
+      <p>Please fill out the form below to report any electricity issues in your area.</p>
+    </section>
+    <section class="form-section">
+      <form id="electricity-issues-form" action="#" method="POST" enctype="multipart/form-data">
+        <!-- Form fields for electricity issues -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+          <label for="id-number">ID Number:</label>
+          <input type="text" id="id-number" name="id-number" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" name="contact-number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="issue-type">Issue Type:</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">Select an issue type</option>
+            <option value="power-outage">Power Outage</option>
+            <option value="faulty-wiring">Faulty Wiring</option>
+            <option value="meter-reading">Meter Reading Issue</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group" id="other-issue" style="display: none;">
+          <label for="other-issue-description">Other Issue Description:</label>
+          <textarea id="other-issue-description" name="other-issue-description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="issue-description">Issue Description:</label>
+          <textarea id="issue-description" name="issue-description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="urgency-level">Urgency Level:</label>
+          <input type="range" id="urgency-level" name="urgency-level" min="1" max="10" step="1" value="5">
+        </div>
+        <div class="form-group">
+          <label for="issue-photo">Issue Photo:</label>
+          <input type="file" id="issue-photo" name="issue-photo" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit Report</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- Footer content here -->
+      <p>Privacy Policy</p>
+    </div>
+  </footer>
+
+  <script src="./js/form-validation.js"></script>
+</body>
+</html>
+
+    

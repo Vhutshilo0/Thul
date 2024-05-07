@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Road Issues - Thulamela Local Municipality</title>
+  <link href="https://fonts.googleapis.com/css?family=jsMath-cmbx10&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fenix&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link href="./css/road-issues.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/v1_4.png" alt="Thulamela Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h1>Report Road Issues</h1>
+      <p>Please provide the following details to report road-related issues:</p>
+    </section>
+    <section class="form-section">
+      <form id="road-issues-form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+          <label for="id-number">ID Number:</label>
+          <input type="text" id="id-number" name="id-number" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number:</label>
+          <input type="tel" id="contact-number" name="contact-number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="issue-type">Issue Type:</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="pothole">Pothole</option>
+            <option value="road-signage">Road Signage Issue</option>
+            <option value="road-markings">Road Markings Issue</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group" id="other-issue-container" style="display: none;">
+          <label for="other-issue">Describe Other Issue:</label>
+          <textarea id="other-issue" name="other-issue"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="issue-description">Issue Description:</label>
+          <textarea id="issue-description" name="issue-description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="urgency">Urgency Level:</label>
+          <select id="urgency" name="urgency" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="issue-photo">Upload Photo:</label>
+          <input type="file" id="issue-photo" name="issue-photo" accept="image/*" capture="environment" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="social-links">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="./js/road-issues.js"></script>
+</body>
+</html>
+
